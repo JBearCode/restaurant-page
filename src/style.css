@@ -30,6 +30,8 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin: 0 auto;
+    width: 95%;
 }
 
 nav a {
@@ -38,12 +40,34 @@ nav a {
     margin: 0.25em;
     padding: 0.25em;
     border: thin solid #277da1;
-    text-decoration: none;
     color: #277da1;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
 }
 
 nav a.active {
     background-color: #90BE6D;
+}
+
+.banner-image {
+    text-align: center;
+}
+
+.banner-image img {
+    border-radius: 8px;
+    margin: 15px auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.home-paragraphs {
+    width: 95%;
+    margin: 0px auto 15px auto;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #277da1;
+
 }
 
 @media only screen and (min-width: 760px) {
