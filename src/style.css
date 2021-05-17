@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+    background-color: #ffd9c5;
+}
+  
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+#restaurant-name-div {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+#restaurant-name-div h1 {
+    font-size: 62px;
+    padding-bottom: 10px;
+    color: #277da1;
+}
+
+#restaurant-name-div h2 {
+    font-size: 32px;
+    color: #90BE6D;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    margin: 0.25em;
+    padding: 0.25em;
+    border: thin solid #277da1;
+    text-decoration: none;
+    color: #277da1;
+}
+
+nav a.active {
+    background-color: #90BE6D;
+}
+
+@media only screen and (min-width: 760px) {
+
+nav {
+    flex-direction: row;
+}
+
+}
