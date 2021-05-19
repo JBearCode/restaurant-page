@@ -1,3 +1,5 @@
+import bannerImg from "../static/laos-background.jpg";
+
 const loadHome = () => {
     // get main div
     const contentDiv = document.getElementById("content");
@@ -8,7 +10,7 @@ const loadHome = () => {
     contentDiv.appendChild(bannerImageDiv);
 
     const homeImg = document.createElement("img");
-    homeImg.src = "../static/laos-background.jpg";
+    homeImg.src = bannerImg;
     homeImg.alt = "Rice fields in Laos";
     bannerImageDiv.appendChild(homeImg);
 

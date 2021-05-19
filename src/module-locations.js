@@ -1,14 +1,3 @@
-const context = require.context('../static', false, /\.jpg$/);
-function importAll(targetContext) {
-  const files = {};
-  targetContext.keys().forEach((item) => {
-    files[item] = targetContext(item);
-  });
-  return files;
-}
-
-const allMyFiles = importAll(context);
-
 import laosMapChart from "../static/laos-map-chart.jpg";
 import vientiane from "../static/vientiane.jpg";
 import luangPrabang from "../static/luang-prabang.jpg";
