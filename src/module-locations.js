@@ -1,4 +1,16 @@
+const context = require.context('../static', false, /\.jpg$/);
+function importAll(targetContext) {
+  const files = {};
+  targetContext.keys().forEach((item) => {
+    files[item] = targetContext(item);
+  });
+  return files;
+}
+
+const allMyFiles = importAll(context);
+
 import laosMapChart from "../static/laos-map-chart.jpg";
+import vientiane from "../static/vientiane.jpg";
 
 const loadLocations = () => {
     // get main div
@@ -45,7 +57,7 @@ const loadLocations = () => {
         paraDiv.appendChild(para);
     }
 
-    let src1 = "../static/vientiane.jpg";
+    let src1 = vientiane;
     let alt1 = "The capital city";
     let desc1 = `Located in the heart of Laos' capital city, our prestigious first location
     has hosted presidents and dignitaries from around the globe.`;
@@ -64,15 +76,6 @@ const loadLocations = () => {
     menuFactory(src3, alt3, desc3);
 }
 
-const context = require.context('../static', false, /\.jpg$/);
-function importAll(targetContext) {
-  const files = {};
-  targetContext.keys().forEach((item) => {
-    files[item.replace('./', '')] = targetContext(item);
-  });
-  return files;
-}
 
-const allMyFiles = importAll(context);
 
 export { loadLocations, laosMapChart };
