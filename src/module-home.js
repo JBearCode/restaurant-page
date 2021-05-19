@@ -2,7 +2,7 @@ const loadHome = () => {
     // get main div
     const contentDiv = document.getElementById("content");
     
-    // load header
+    /* load header
     const homeHeader = document.createElement("header");
     contentDiv.appendChild(homeHeader);
     
@@ -42,6 +42,7 @@ const loadHome = () => {
     nav.appendChild(buttonHome);
     nav.appendChild(buttonMenu);
     nav.appendChild(buttonLocations);
+    */
 
     // load banner image div and img
     const bannerImageDiv = document.createElement("div");

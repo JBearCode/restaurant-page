@@ -69,13 +69,38 @@ nav button.active {
     font-family: 'Dancing Script', cursive;
     font-size: 28px;
     color: #277da1;
-
 }
 
 @media only screen and (min-width: 760px) {
-
 nav {
     flex-direction: row;
 }
+}
 
+.menu-card {
+    display: flex;
+    padding: 20px;
+    background-color: #90BE6D;
+    width: 95%;
+    margin: 0px auto 22px auto;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    text-align: center;
+    align-items: center;
+    color: #277da1;
+    border-radius: 8px;
+}
+
+.card-p {
+    flex: 2;
+}
+
+.card-img {
+    padding-right: 20px;
+    flex: 1;
+}
+
+.card-img img {
+    max-width: 100%;
+    border-radius: 8px;
 }

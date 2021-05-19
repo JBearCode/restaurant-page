@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/style.css">
 </head>
 
 <body>
@@ -16,12 +17,12 @@
         <h2>Authentic Lao Cuisine</h2>
       </div>
       <nav>
-        <a class="active" href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">Locations</a>
+        <button class="active" href="#">Home</a>
+        <button href="#">Menu</a>
+        <button href="#">Locations</a>
       </nav>
     </header>
-    <div class="banner-image">
+    <div class="banner-image-div">
       <img src="../static/laos-background.jpg" alt="Rice fields in Laos" height="auto" width="95%">
     </div>
     <div class="home-paragraphs">
@@ -34,7 +35,24 @@
       Rice & Spice is a memory you won't soon forget.
       </p>
     </div>
-
+    <div id="menu-cards-div">
+      <div class="menu-card">
+        <div class="card-img">
+        <img src="../static/pho.jpg" alt="pho">
+        </div>
+        <div class="card-p">
+        <p>Flavored with an array of herbs and spices, this steaming dish warms the very soul.</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="card-img">
+        <img src="../static/pho.jpg" alt="pho">
+        </div>
+        <div class="card-p">
+        <p>Spiced with an array of herbs and flavors, this steaming traditional dish warms the very soul.</p>
+        </div>
+      </div>
+    </div>
     </div>
     <script src="bundle.js"></script>
 </body>
