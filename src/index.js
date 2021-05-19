@@ -1,7 +1,7 @@
 import { loadHeader } from './module-header.js';
 import { loadHome } from './module-home.js';
 import { loadMenu } from './module-menu.js';
-import { loadLocations, laosMapChart } from './module-locations.js';
+import { loadLocations } from './module-locations.js';
 import './style.css';
 
 
