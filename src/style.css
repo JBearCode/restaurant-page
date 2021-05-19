@@ -34,7 +34,7 @@ nav {
     width: 95%;
 }
 
-nav a {
+nav button {
     flex: 1;
     text-align: center;
     margin: 0.25em;
@@ -46,7 +46,7 @@ nav a {
     font-family: 'Dancing Script', cursive;
 }
 
-nav a.active {
+nav button.active {
     background-color: #90BE6D;
 }
 
