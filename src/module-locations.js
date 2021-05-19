@@ -75,4 +75,4 @@ function importAll(targetContext) {
 
 const allMyFiles = importAll(context);
 
-export { loadLocations };
+export { loadLocations, laosMapChart };
