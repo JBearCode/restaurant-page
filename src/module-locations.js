@@ -1,3 +1,5 @@
+import laosMapChart from "../static/laos-map-chart.jpg";
+
 const loadLocations = () => {
     // get main div
     const contentDiv = document.getElementById("content");
@@ -8,7 +10,7 @@ const loadLocations = () => {
     contentDiv.appendChild(bannerImageDiv);
 
     const homeImg = document.createElement("img");
-    homeImg.src = "../static/laos-map-chart.jpg";
+    homeImg.src = laosMapChart;
     homeImg.alt = "Map of our locations";
     bannerImageDiv.appendChild(homeImg);
 
@@ -61,5 +63,16 @@ const loadLocations = () => {
     see them through all the fog. In fact, even seeing your food may be prove a challenge.`;
     menuFactory(src3, alt3, desc3);
 }
+
+const context = require.context('../static', false, /\.jpg$/);
+function importAll(targetContext) {
+  const files = {};
+  targetContext.keys().forEach((item) => {
+    files[item.replace('./', '')] = targetContext(item);
+  });
+  return files;
+}
+
+const allMyFiles = importAll(context);
 
 export { loadLocations };

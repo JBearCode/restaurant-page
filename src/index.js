@@ -4,6 +4,7 @@ import { loadMenu } from './module-menu.js';
 import { loadLocations } from './module-locations.js';
 import './style.css';
 
+
 console.log("Webpack is working");
 
 window.onload = function() {
@@ -69,6 +70,5 @@ function clearClass() {
     document.getElementById("menu-button").className = "";
     document.getElementById("locations-button").className = "";
 }
-
 
 
