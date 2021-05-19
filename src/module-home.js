@@ -26,14 +26,17 @@ const loadHome = () => {
     const buttonHome = document.createElement("button");
     buttonHome.setAttribute = ('type', 'button');
     buttonHome.className = "active";
+    buttonHome.id = "home-button";
     buttonHome.textContent = "Home";
 
     const buttonMenu = document.createElement("button");
     buttonMenu.setAttribute = ('type', 'button');
+    buttonMenu.id = "menu-button";
     buttonMenu.textContent = "Menu";
 
     const buttonLocations = document.createElement("button");
     buttonLocations.setAttribute = ('type', 'button');
+    buttonLocations.id = "locations-button";
     buttonLocations.textContent = "Locations";
 
     nav.appendChild(buttonHome);
