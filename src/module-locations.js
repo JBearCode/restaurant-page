@@ -11,6 +11,8 @@ const allMyFiles = importAll(context);
 
 import laosMapChart from "../static/laos-map-chart.jpg";
 import vientiane from "../static/vientiane.jpg";
+import luangPrabang from "../static/luang-prabang.jpg";
+import phongsali from "../static/phongsali.jpg";
 
 const loadLocations = () => {
     // get main div
@@ -63,13 +65,13 @@ const loadLocations = () => {
     has hosted presidents and dignitaries from around the globe.`;
     menuFactory(src1, alt1, desc1);
 
-    let src2 = "../static/luang-prabang.jpg";
+    let src2 = luangPrabang;
     let alt2 = "One of Laos' many waterfalls";
     let desc2 = `Overlooking a secluded waterfall, our Luang Prabang location offers a
     natural and relaxing environment for your expensive meal.`;
     menuFactory(src2, alt2, desc2);
 
-    let src3 = "../static/phongsali.jpg";
+    let src3 = phongsali;
     let alt3 = "Mountains of Laos";
     let desc3 = `Our newest location is nestled in Phongsaly's mountains, but you may not
     see them through all the fog. In fact, even seeing your food may be prove a challenge.`;
@@ -78,4 +80,4 @@ const loadLocations = () => {
 
 
 
-export { loadLocations, laosMapChart };
+export { loadLocations };
